@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for character in range(97, 123):
-    if chr(character) not in ['q', 'e']:
-        print("{:c}".format(character), end="")
-print("guillaume")
+for i in range(ord('a'), ord('z') + 1):
+    if chr(i) == 'e' or chr(i) == 'q':
+        continue
+    print("{}".format(chr(i)), end="")
