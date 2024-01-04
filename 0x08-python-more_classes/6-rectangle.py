@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 class Rectangle:
-    number_of_instances = 0  # Initialize class variable
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         self.__width = width
@@ -38,7 +38,7 @@ class Rectangle:
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-        return '\n'.join(['#' * self.__width for _ in range(self.__height)])
+        return (('#' * self.__width + '\n') * self.__height)[:-1]
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
