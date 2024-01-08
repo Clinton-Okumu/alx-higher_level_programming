@@ -14,7 +14,3 @@ def add_integer(a, b=98):
 
     # Return the addition of a and b
     return a + b
-
-# Example usage:
-result = add_integer(5, 3.7)
-print(result)  # Output: 8
