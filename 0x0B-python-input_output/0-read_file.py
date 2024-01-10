@@ -1,12 +1,9 @@
 #!/usr/bin/python3
 
-"""function that reads a text file"""
+"""Defines a text file-reading function"""
 
 
 def read_file(filename=""):
-    with open(filename, "r", encoding="utf8") as file:
-        while True:
-            line = file.readline()
-            if not line:
-                break
-            print(line, end="")
+    """Print the contests of a UTF8 text file to stdout."""
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end="")

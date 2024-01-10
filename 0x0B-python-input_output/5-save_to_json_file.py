@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""function writing object using JSON representation"""
+"""Defines a JSON file-writing function."""
 import json
 
 
