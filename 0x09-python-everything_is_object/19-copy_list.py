@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-def copy_list(l):
-    return l.copy() if isinstance(l, list) else l
+def copy_list(lst):
+    return lst.copy() if isinstance(lst, list) else lst
